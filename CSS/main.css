@@ -1,0 +1,178 @@
+/* Variabes */
+/* Mixin's */
+body {
+    background: #4b0339;
+    font-family: "Arial, Helvetica, sans-serif";
+    color: rgb(197, 148, 175);
+    height: 100%;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .wrappper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrappper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  canvas {
+    color: #fff;
+    border: #fff dashed 2px;
+    padding: 15px;
+  }
+
+   The element to apply the animation to 
+  div {
+    width: 500px;
+    height: 500px;
+    position: bottom;
+    animation-name:" Whoop Whoop! YOU WIN!";
+    color: green;
+    font-weight: 300;
+    animation-duration: 4s;
+  }
+  .blinking{
+    animation:blinkingText 15s infinite;
+    speed
+}
+@keyframes blinkingText{
+	0%{		color: rgb(14, 173, 54);}
+	49%{	color: transparent;	}
+	50%{	color: transparent;	}
+	99%{	color:transparent;	}
+	100%{	color:rgb(14, 173, 54);	}
+} 
+  
+  h1, h2, h3 {
+    font-family: "Arial, Helvetica, sans-serif";
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 5px 0;
+  }
+  
+  h1 {
+    font-size: 3.5em;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  p {
+    font-size: 2.5em;
+  }
+  
+  #alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 1100px;
+  }
+  #alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    padding-top: 7px;
+    background: rgb(211, 189, 202);
+    color: #470431;
+    font-size: 25px;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: solid 1px #fff;
+  }
+  #alphabet li:hover {
+    background: #c1d72e;
+    border: solid 1px #fff;
+    color: #fff;
+  }
+  
+  #my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+    display: block;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 2.5em;
+  }
+  
+  .active {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default;
+  }
+  .active:hover {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  
+  #mylives {
+    font-size: 2.5em;
+    text-align: center;
+    display: block;
+  }
+  
+  button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: rgb(231, 213, 213);
+    color: #470431;
+    border: solid 1px rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+  }
+  button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #c1d72e;
+    border: solid 1px #fff;
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    #alphabet {
+      padding: 0 0 0 15px;
+    }
+  }
+  @media (max-width: 480px) {
+    #alphabet {
+      padding: 0 0 0 25px;
+    }
+  }
